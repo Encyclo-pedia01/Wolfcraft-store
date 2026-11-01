@@ -24,34 +24,33 @@ export default async function Home() {
 
   return (
     <div>
-      {/* HERO */}
-      <section className="bg-[#0B1F3A] text-white">
-        <div className="max-w-6xl mx-auto px-6 py-20 text-center">
-          <p className="text-[#22D3EE] text-sm uppercase tracking-widest mb-4">
-            The Official Collab
-          </p>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            The Academic Encyclopedia{" "}
-            <span className="text-[#22D3EE]">×</span> Wolfcraft
-          </h1>
-          <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-8">
-            Premium custom T-shirts for UPSA students. Pick your design, pick
-            your color — delivered to your hostel or pickup on campus.
-          </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Link
-              href="/shop"
-              className="bg-[#22D3EE] text-[#0B1F3A] font-semibold px-6 py-3 rounded-lg hover:bg-cyan-300"
-            >
-              Shop the Drop
-            </Link>
-            <Link
-              href="/custom"
-              className="border border-[#22D3EE] text-[#22D3EE] px-6 py-3 rounded-lg hover:bg-[#22D3EE]/10"
-            >
-              Request Custom Design
-            </Link>
-          </div>
+            {/* HERO SECTION - Full Banner */}
+      <section className="relative w-full max-w-7xl mx-auto px-4 pt-8 pb-12">
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#00E5FF]/20 border border-[#00E5FF]/30">
+          <Image
+            src="https://drtyrktxrzfioazkgrsj.supabase.co/storage/v1/object/public/designs/Futuristic%20Wolfcraft%20Academic%20Collaboration.png" 
+            alt="Encyclopedia x Wolfcraft Collaboration"
+            width={1920}
+            height={1080}
+            className="w-full h-auto object-cover"
+            priority
+          />
+        </div>
+        
+        {/* Buttons under the banner */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+          <Link
+            href="/shop"
+            className="bg-[#00E5FF] text-[#051024] font-bold px-10 py-4 rounded-md hover:bg-cyan-300 transition-colors text-lg text-center"
+          >
+            Shop the Drop
+          </Link>
+          <Link
+            href="/custom"
+            className="border-2 border-[#00E5FF] text-[#00E5FF] font-bold px-10 py-4 rounded-md hover:bg-[#00E5FF]/10 transition-colors text-lg text-center"
+          >
+            Request Custom Design
+          </Link>
         </div>
       </section>
 
