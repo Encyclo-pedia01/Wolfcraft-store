@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #0B1F3A;
+  --color-brand-cyan: #22D3EE;
+  --color-brand-slate: #F8FAFC;
+}
+
+/* Force a light theme, ignore the OS dark mode for now */
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-brand-slate);
+  color: #0f172a; /* Slate 900 */
+}
