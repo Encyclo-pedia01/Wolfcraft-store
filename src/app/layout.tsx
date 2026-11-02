@@ -71,7 +71,7 @@ export default function RootLayout({
               <p className="font-bold tracking-widest uppercase text-xs mb-2 text-slate-300">
                 Powered by The Academic Encyclopedia & Wolfcraft
               </p>
-              <p>© {new Date().getFullYear()} — UPSA Edition</p>
+              <p>© 2024 — UPSA Edition</p>
             </div>
           </div>
         </footer>
